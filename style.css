@@ -1,0 +1,60 @@
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #1f4e79 0%, #2e75b6 100%);
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    padding: 20px; color: #1e293b;
+  }
+  .card {
+    background: #fff; width: 100%; max-width: 560px;
+    border-radius: 16px; box-shadow: 0 12px 40px rgba(0,0,0,.25);
+    padding: 36px 32px; text-align: center;
+  }
+  .icone { font-size: 44px; margin-bottom: 8px; }
+  h1 { font-size: 1.45rem; color: #1f4e79; margin-bottom: 18px; }
+  .info { background: #f1f5f9; border-radius: 10px; padding: 14px 16px; margin-bottom: 24px; text-align: left; line-height: 1.8; }
+  .info strong { color: #1f4e79; }
+  form { display: flex; flex-direction: column; gap: 10px; text-align: left; }
+  label { font-weight: 600; color: #334155; }
+  .linha { display: flex; gap: 10px; }
+  input {
+    flex: 1; padding: 13px 14px; font-size: 1rem;
+    border: 2px solid #cbd5e1; border-radius: 10px; outline: none; transition: border .2s;
+  }
+  input:focus { border-color: #2e75b6; }
+  button {
+    padding: 13px 22px; font-size: 1rem; font-weight: 600; color: #fff;
+    background: #1f4e79; border: none; border-radius: 10px; cursor: pointer; transition: background .2s;
+  }
+  button:hover { background: #163a5c; }
+  #resultado { margin-top: 24px; }
+  .erro { background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; padding: 12px; border-radius: 10px; }
+  .aluno { text-align: left; }
+  .aluno h2 { font-size: 1.1rem; color: #1f4e79; margin-bottom: 4px; }
+  .aluno .mat { color: #64748b; font-size: .92rem; margin-bottom: 14px; }
+  table { width: 100%; border-collapse: collapse; border-radius: 10px; overflow: hidden; }
+  th { background: #1f4e79; color: #fff; padding: 11px; font-size: .95rem; }
+  td { padding: 11px; border-bottom: 1px solid #e2e8f0; text-align: center; }
+  td:first-child { text-align: left; }
+  tr:nth-child(even) td { background: #f8fafc; }
+  .nota { font-weight: 700; }
+  .aviso { background: #fff7ed; color: #9a3412; border: 1px solid #fed7aa; padding: 12px; border-radius: 10px; }
+  .linha-media td { background: #eaf1f8 !important; font-weight: 700; }
+  .aprovado { color: #15803d; }
+  .atencao { color: #b91c1c; }
+  .rodape { margin-top: 26px; font-size: .8rem; color: #94a3b8; }
+
+  /* Tablet */
+  @media (max-width: 768px) {
+    .card { max-width: 90%; padding: 30px 24px; }
+  }
+  /* Celular */
+  @media (max-width: 480px) {
+    body { padding: 12px; align-items: flex-start; }
+    .card { max-width: 100%; padding: 24px 16px; margin-top: 10px; }
+    h1 { font-size: 1.2rem; }
+    .linha { flex-direction: column; }
+    button { width: 100%; }
+    th, td { padding: 9px 6px; font-size: .9rem; }
+  }
